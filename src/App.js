@@ -1,5 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,7 +7,7 @@ import Logements from "./pages/Logements";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
-  return (
+  return (  
     <div className="App">
     <Router>   
       <Routes>

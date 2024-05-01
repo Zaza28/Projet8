@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    background-color: black;
+    padding: 40px;
+    flex-direction: column;
+align-items: center;
+gap: 30px;
+margin-top: 400px;
+
+.logo-footer{
+color: white;
+width: 10%;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    font-family: montserrat;
+   margin-bottom: -25px;
+}
+
+}

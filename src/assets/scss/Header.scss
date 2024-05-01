@@ -1,0 +1,36 @@
+.nav-Header{
+   display: flex;
+   padding: 20px;
+   align-items: center;
+   align-content: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   gap: 900px;
+   
+    .logo-Nav{
+    display: flex;
+    width: 10%;
+    
+}
+
+ .nav-listes {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+    li a:active,
+    a:link,
+    a:visited{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+}

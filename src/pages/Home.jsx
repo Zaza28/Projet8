@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 
 
 
@@ -8,8 +8,9 @@ export default function Home(){
    <><div>
    <Header />
 </div><div>
-      <Footer />
-   </div></>
+   </div> 
+    <Footer />
+    </>
  )
 
 }
