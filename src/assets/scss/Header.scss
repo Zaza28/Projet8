@@ -1,16 +1,20 @@
 .nav-Header{
    display: flex;
-   padding: 20px;
+   padding: 0px;
    align-items: center;
    align-content: center;
    justify-content: space-evenly;
    flex-direction: row;
    flex-wrap: nowrap;
    gap: 900px;
+   margin-top: 30px;
+   margin-bottom: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
    
     .logo-Nav{
     display: flex;
-    width: 10%;
+    width: 13%;
     
 }
 
