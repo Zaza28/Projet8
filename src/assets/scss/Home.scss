@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    width: 70%;
+    width: 74%;
     height: 180px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-bottom: 50px;
     mix-blend-mode: darken;
     background: #000;
@@ -29,8 +29,14 @@ border-radius: 15px;
 opacity: 0.6;
 }
 
+}
 
-
-
-
+.section-cards{
+height: 800px;
+    background: #F6F6F6;
+    border-radius: 25px;
+    margin-left: 200px;
+    margin-right: 190px;
+    padding-bottom: 20px;
+margin-bottom: 50px;
 }

@@ -1,0 +1,36 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 50px;
+
+.card{
+width: 30%;
+background-color: #FF6060;
+border-radius: 10px;
+height: 340px;
+
+
+
+.title-card{
+    padding: 20px;
+    margin-top: 260px;
+    margin-right: 150px;
+font-family: montserrat;
+white-space: wrap;
+color: white;
+display: flex;
+flex-wrap: wrap;
+font-size: 18px;
+
+}
+
+
+}
+
+
+
+
+
+}
