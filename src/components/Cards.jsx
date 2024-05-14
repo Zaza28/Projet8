@@ -1,26 +1,12 @@
-import "../assets/scss/Cards.scss";
+import { Link } from 'react-router-dom';
 
-export default function Cards() {
-    return  (
-<div className="cards-container">
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-<article className="card">
-    <h3 className="title-card">Titre de la location</h3>
-</article>
-</div>
-   )
- }
+export default function Cards({ title, cover, id }) {
+  return (
+    <Link to={`/logements/${id}`}>
+    <article className="card">
+      <img className="img-card" src={cover} alt={title} />
+      <h3 className="title-card">{title}</h3>
+    </article>
+    </Link>
+  );
+}

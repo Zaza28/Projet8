@@ -1,5 +1,6 @@
 import logo from '../images/LOGO.svg';
 import '../assets/scss/Header.scss';
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return(
@@ -8,10 +9,10 @@ export default function Header(){
      
      <ul className='nav-listes' >
         <li>
-            <a href='./pages/Home'>Accueil</a>
+          <Link to="/" >Accueil</Link>
         </li>
         <li>
-          <a href='./pages/About'>A propos</a>
+          <Link to="/About" >A propos</Link>
         </li>
      </ul>
 

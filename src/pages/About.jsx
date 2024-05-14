@@ -1,16 +1,14 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Collapse from "../components/Collapse";
 
 
-export default function About(){
- return(
-   <><div>
-   <Header />
-   <h2> About Page </h2>
-</div><div>
-      <Footer />
-      <p>Footer</p>
-   </div></>
- )
-
+export default function About() {
+  return (
+    <>
+      <div>
+        <h2> About Page </h2>
+        <Collapse />
+      </div>
+     
+    </>
+  );
 }
