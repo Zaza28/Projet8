@@ -12,6 +12,7 @@
     .banner-title{
         display: flex;
         flex-wrap: wrap;
+        font-family: Montserrat;
         position: absolute;
         justify-content: center;
        padding-top: 40px;
@@ -31,11 +32,3 @@ opacity: 0.6;
 
 }
 
-.section-cards{
-    background: #F6F6F6;
-    border-radius: 25px;
-    margin-left: 200px;
-    margin-right: 190px;
-    padding-bottom: 20px;
-margin-bottom: 50px;
-}

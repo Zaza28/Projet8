@@ -6,6 +6,7 @@ import "../assets/scss/Cards.scss";
 
 export default function Home() {
   return (
+  
     <main>
       <div id="banner">
         <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
@@ -13,11 +14,12 @@ export default function Home() {
       </div>
       <section className="section-cards">
         <div className="cards-container">
-          {logements.map((log) => (
-            <Cards id={log.id} title={log.title} cover={log.cover} />
+          {logements.map((log, i) => (
+            <Cards key={log.id} id={log.id} title={log.title} cover={log.cover} />
           ))}
         </div>
       </section>
     </main>
+    
   );
 }
