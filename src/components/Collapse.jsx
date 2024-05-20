@@ -2,25 +2,30 @@ import { useState } from "react";
 import "../assets/scss/Collapse.scss";
 import "../pages/Logements";
 
-export default function Collapse({title, content}) {
-
-  const [isOpen, setIsOpen] = useState(true);
+export default function Collapse({ title, content }) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
- 
-      <div className="collapse">
-        <h3 className="title-collapse" onClick={() => setIsOpen(!isOpen)}>
-     {title}
-        </h3>
-        {isOpen && (
-          <div className="collapse-content">
-      
-                {content}
-              </div>
-          )} 
-          </div>
-      
-    
-       )  
+    <section className="collapse-container">
+    <div className="collapse">
+    <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
+          <h3 className="title-collapse">{title}</h3>
+          <i className={`fa-solid ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}></i>
+        </div>
+
+      {isOpen && (
+        <div className="collapse-content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
+    </div>
+    </section>
+  );
 }
-
-

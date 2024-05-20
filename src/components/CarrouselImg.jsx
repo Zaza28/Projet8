@@ -1,21 +1,25 @@
 import { useState } from "react";
-import "../pages/Logements";
+import "../assets/scss/CarrouselImg.scss";
 
 export default function Logement({ pictures }) {
   const [index, setIndex] = useState(0);
+
   const setSlide = (direction) => {
     if (direction === "right") {
-      if (index + 1 < pictures.lenght) setIndex(index + 1);
-      else {
+      if (index + 1 < pictures.length) {
+        setIndex(index + 1);
+      } else {
         setIndex(0);
       }
     } else {
-      if (index - 1 < 0) setIndex(pictures.length - 1);
-      else {
-        setIndex(0);
+      if (index - 1 < 0) {
+        setIndex(pictures.length - 1);
+      } else {
+        setIndex(index - 1);
       }
     }
   };
+
   return (
     <div className="carrousel">
       <button
@@ -23,16 +27,21 @@ export default function Logement({ pictures }) {
           setSlide("left");
         }}
       >
-        Précedent
+        <i class="fa-solid fa-chevron-left"></i>
       </button>
-      <img className="img-banner-logement" src={pictures[index]} alt="slide-img" />
+      <img
+        className="img-banner-logement"
+        src={pictures[index]}
+        alt="slide-img"
+      />
       <button
+      
         onClick={() => {
           setSlide("right");
         }}
       >
-        Next
-      </button>
+       <i class="fa-solid fa-chevron-right"></i> 
+      </button> 
     </div>
   );
 }
