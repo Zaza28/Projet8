@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <section className="section-cards">
         <div className="cards-container">
-          {logements.map((log, i) => (
+          {logements.map((log) => (
             <Cards key={log.id} id={log.id} title={log.title} cover={log.cover} />
           ))}
         </div>

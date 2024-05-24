@@ -1,0 +1,37 @@
+.erreur-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 80px;
+
+  .titre-erreur {
+    color: #ff6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+
+  .info-erreur {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .lien-erreur {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+  }
+}
