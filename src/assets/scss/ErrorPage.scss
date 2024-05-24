@@ -35,3 +35,40 @@
     text-decoration-line: underline;
   }
 }
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 767.98px) */
+@media (max-width: 767.98px) {
+  main {
+    .erreur-content {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 40px;
+
+      .titre-erreur {
+        font-size: 100px;
+        margin-bottom: -20px;
+        margin-top: -20px;
+      }
+    
+      .info-erreur {
+        text-align: center;
+        font-size: 18px;
+
+      }
+    
+      .lien-erreur {
+
+        font-size: 14px;
+ 
+      }
+
+
+
+
+
+
+    }
+  }
+}

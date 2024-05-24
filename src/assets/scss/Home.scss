@@ -1,9 +1,9 @@
 main {
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  // margin: 50px;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
 
   #banner {
     display: flex;
@@ -34,6 +34,29 @@ main {
       height: 180px;
       border-radius: 15px;
       opacity: 0.6;
+    }
+  }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 767.98px) */
+@media (max-width: 767.98px) {
+  main {
+
+
+    #banner {
+ 
+
+
+      .banner-title {
+        display: flex;
+        white-space: wrap;
+        font-size: 24px;
+        text-align: start;
+        padding-left: 25px;
+
+        
+      }
     }
   }
 }
