@@ -30,7 +30,7 @@ export default function Logements() {
         <h1 className="logements-title">{logement.title}</h1>
         <p className="logements-place">{logement.location}</p>
         <div className="information">
-          <p className="hote-info">{logement.host.name}</p>
+          <p className="hote-info">{logement.host.name.split(' ')[0]}<br />{logement.host.name.split(' ')[1]}</p>
           <img
             src={logement.host.picture}
             alt={`${logement.host.name}`}
