@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background: var(--Red, #ff6060);
+    overflow: hidden;
     width: 100%;
 
     .collapse-header {
@@ -16,6 +16,8 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+      background: var(--Red, #ff6060);
+
 
       h3 {
         font-family: Montserrat;
