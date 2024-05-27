@@ -30,7 +30,6 @@ export default function Logement({ pictures }) {
           <button onClick={() => { setSlide("right"); } }>
             <i className="fa-solid fa-chevron-right"></i>
           </button></><div className="image-compteur">
-            {/*index = 0  + 1  position première img / nombres d'img du tableau*/}
             {index + 1}/{pictures.length}
           </div></>
   )}
