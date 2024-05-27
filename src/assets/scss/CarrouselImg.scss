@@ -1,92 +1,81 @@
 .carrousel {
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .img-banner-logement {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .image-compteur {
+    position: absolute;
+    top: 360px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Montserrat;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-
-    .img-banner-logement {
-      width: 100%;
-      height: 415px;
-      border-radius: 25px;
-      object-fit: cover;
   }
-    
-    button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      padding: 10px;
-      font-size: 54px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    button:focus {
-      outline: none;
-    }
-    
-    button:hover i {
-      color: rgba(255, 255, 255, 0.8);
-    }
-    
-    button:first-of-type {
-      left: 10px;
-    }
-    
-    button:last-of-type {
-      right: 10px;
-    }
-    
-    button i {
-      pointer-events: none;
-    }
 
-
-
+  button:focus {
+    outline: none;
   }
-  
+
+  button:hover i {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  button:first-of-type {
+    left: 10px;
+  }
+
+  button:last-of-type {
+    right: 10px;
+  }
+
+  button i {
+    pointer-events: none;
+  }
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, more than 767.98px) */
 @media (max-width: 767.98px) {
   .carrousel {
-   margin-top: -30px;
+    margin-top: -30px;
 
     .img-banner-logement {
       width: 100%;
       height: 205px;
       border-radius: 25px;
       margin-bottom: 10px;
+    }
+    .image-compteur{
+      display: none;
+    }
+
+    button {
+      font-size: 24px;
+    }
   }
-
-  button {
-     font-size: 24px;
-    
-  }
-  
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
 }

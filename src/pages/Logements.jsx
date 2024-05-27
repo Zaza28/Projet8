@@ -8,26 +8,18 @@ import CarrouselImg from "../components/CarrouselImg";
 import logements from "../data/logements.json";
 
 export default function Logements() {
-  //UseNavigate : change de route via le code
   const navigate = useNavigate();
-  //UseParams : accède paramètres de l'URL 
   const { id } = useParams();
-  //On cherche dans les données des logements 
   const logement = logements.find((log) => log.id === id);
 
-  // useEffect : Si le logement n'est pas trouvé
-  // l'utilisateur est redirigé vers une page d'erreur.
   useEffect(() => {
     if (!logement) {
-      //UseNavigate
-      navigate("/ErrorPage"); // Rediriger vers la page 404
+      navigate("/ErrorPage");
     }
   }, [logement, navigate]);
 
-  //logement n'existe pas est en cours de chargement ou pas été trouvé, 
-  //on ne retourne rien.
   if (!logement) {
-    return null; 
+    return null;
   }
 
   return (
@@ -38,7 +30,11 @@ export default function Logements() {
         <h1 className="logements-title">{logement.title}</h1>
         <p className="logements-place">{logement.location}</p>
         <div className="information">
-          <p className="hote-info">{logement.host.name.split(' ')[0]}<br />{logement.host.name.split(' ')[1]}</p>
+          <p className="hote-info">
+            {logement.host.name.split(" ")[0]}
+            <br />
+            {logement.host.name.split(" ")[1]}
+          </p>
           <img
             src={logement.host.picture}
             alt={`${logement.host.name}`}
