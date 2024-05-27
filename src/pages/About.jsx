@@ -1,5 +1,7 @@
 import Image2 from "../images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg";
 import Collapse from "../components/Collapse";
+import Banner from "../components/Banner";
+
 import "../assets/scss/About.scss";
 import "../assets/scss/Home.scss";
 
@@ -14,9 +16,9 @@ export default function About() {
   ]
   return (
   <main>
-      <div id="banner">
-        <img className="img-banner" src={Image2} alt="images accueil" />
-      </div>
+   
+      <Banner  cover={Image2}/>
+
 
       <section className="collapse-container2">
     

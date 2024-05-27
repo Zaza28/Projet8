@@ -27,7 +27,7 @@ export default function Logement({ pictures }) {
           setSlide("left");
         }}
       >
-        <i class="fa-solid fa-chevron-left"></i>
+        <i className="fa-solid fa-chevron-left"></i>
       </button>
       <img
         className="img-banner-logement"
@@ -40,7 +40,7 @@ export default function Logement({ pictures }) {
           setSlide("right");
         }}
       >
-       <i class="fa-solid fa-chevron-right"></i> 
+       <i className="fa-solid fa-chevron-right"></i> 
       </button> 
     </div>
   );

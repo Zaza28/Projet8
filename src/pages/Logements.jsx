@@ -1,25 +1,33 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
+
 import "../assets/scss/Logements.scss";
+
 import Collapse from "../components/Collapse";
 import CarrouselImg from "../components/CarrouselImg";
 import logements from "../data/logements.json";
 
 export default function Logements() {
+  //UseNavigate : change de route via le code
   const navigate = useNavigate();
+  //UseParams : accède paramètres de l'URL 
   const { id } = useParams();
+  //On cherche dans les données des logements 
   const logement = logements.find((log) => log.id === id);
 
-  // useEffect : pour naviguer conditionnellement lorsque le logement est undefined.
-  // Cela permet de ne pas déclencher la navigation directement dans le flux de rendu.
+  // useEffect : Si le logement n'est pas trouvé
+  // l'utilisateur est redirigé vers une page d'erreur.
   useEffect(() => {
     if (!logement) {
+      //UseNavigate
       navigate("/ErrorPage"); // Rediriger vers la page 404
     }
   }, [logement, navigate]);
 
+  //logement n'existe pas est en cours de chargement ou pas été trouvé, 
+  //on ne retourne rien.
   if (!logement) {
-    return null; // Ou une alternative pour montrer un état de chargement ?
+    return null; 
   }
 
   return (
