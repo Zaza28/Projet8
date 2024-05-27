@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "../assets/scss/ErrorPage.scss";
 
 export default function ErrorPage() {
@@ -9,7 +10,9 @@ export default function ErrorPage() {
           <h3 className="info-erreur">
             Oups! La page que vous demandez n'existe pas.
           </h3>
+          <Link to={`/`}>
           <p className="lien-erreur">Retourner sur la page d'accueil</p>
+        </Link>
         </div>
       </section>
     </main>
