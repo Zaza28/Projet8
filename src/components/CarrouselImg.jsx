@@ -24,19 +24,19 @@ export default function Logement({ pictures }) {
 <div className="carrousel">
   {/* condition : si pictures inférieur à 1 on affiche pas les chevrons */}
   {pictures.length > 1 &&( 
-     <><button onClick={() => { setSlide("left") } }>
+     <><><button onClick={() => { setSlide("left"); } }>
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        <button onClick={() => { setSlide("right") } }>
+          <button onClick={() => { setSlide("right"); } }>
             <i className="fa-solid fa-chevron-right"></i>
-          </button></>
+          </button></><div className="image-compteur">
+            {/*index = 0  + 1  position première img / nombres d'img du tableau*/}
+            {index + 1}/{pictures.length}
+          </div></>
   )}
   <img className="img-banner-logement" src={pictures[index]} alt="slide-img" />
 
-<div className="image-compteur">
-{/*index = 0  + 1  position première img / nombres d'img du tableau*/}
-  {index + 1}/{pictures.length}
-</div>
+
 
 </div>
   );
